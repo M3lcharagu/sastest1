@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Sasfino Farm Limited</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="logo">
+      <img src="sasfino_logo_2.png" alt="Sasfino Farm Limited" class="logo-img">
+    </div>
+    <nav class="main-nav">
+      <a href="about.html">About</a>
+      <a href="index.html#sustainability">Sustainability</a>
+      <a href="products.html">Products</a>
+      <a href="index.html#leadership">Leadership</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a href="contact.html" class="btn btn-primary">Request Quote</a>
+  </div>
+</header>
+
+<section class="page-banner">
+  <div class="banner-photo" style="background-image:url('slide-pallets_1.jpg')"></div>
+  <div class="banner-overlay"></div>
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Contact</div>
+    <h1 class="reveal is-visible">Let's Build Your Shipment's Foundation</h1>
+    <p class="sub reveal is-visible">Tell us about your cargo, freight type, and timeline. Our team will get back to you with dimensions, lead time, and ISPM 15 compliance details for your specific shipment.</p>
+  </div>
+</section>
+
+<section id="contact-main">
+  <div class="wrap">
+    <div class="contact-grid">
+
+      <div class="contact-form-card reveal" id="contact-form-card">
+        <form id="quote-form" novalidate>
+          <div class="form-row">
+            <div class="form-field" id="field-name">
+              <label for="f-name">Full name <span class="req">*</span></label>
+              <input type="text" id="f-name" name="name" autocomplete="name" required>
+              <div class="form-error-msg">Please enter your name.</div>
+            </div>
+            <div class="form-field" id="field-company">
+              <label for="f-company">Company / Organisation</label>
+              <input type="text" id="f-company" name="company" autocomplete="organization">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field" id="field-email">
+              <label for="f-email">Email address <span class="req">*</span></label>
+              <input type="email" id="f-email" name="email" autocomplete="email" required>
+              <div class="form-error-msg">Please enter a valid email address.</div>
+            </div>
+            <div class="form-field" id="field-phone">
+              <label for="f-phone">Phone number</label>
+              <input type="tel" id="f-phone" name="phone" autocomplete="tel" placeholder="+254 7...">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field" id="field-product">
+              <label for="f-product">Product of interest</label>
+              <select id="f-product" name="product">
+                <option value="">Not sure yet</option>
+                <option value="pallets">Export-Grade Pallets</option>
+                <option value="angle">Angle Board Corners</option>
+                <option value="tops">Pallet Tops</option>
+                <option value="custom">Custom Dimensions</option>
+              </select>
+            </div>
+            <div class="form-field" id="field-quantity">
+              <label for="f-quantity">Estimated quantity</label>
+              <input type="number" min="0" id="f-quantity" name="quantity" placeholder="e.g. 200 units">
+            </div>
+          </div>
+          <div class="form-field" id="field-message">
+            <label for="f-message">Message <span class="req">*</span></label>
+            <textarea id="f-message" name="message" required placeholder="Tell us about your cargo, freight type (sea/air), destination, and timeline..."></textarea>
+            <div class="form-error-msg">Please add a short message so we know how to help.</div>
+          </div>
+          <div class="form-submit-row">
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <span class="form-note">We typically reply within 1 business day.</span>
+          </div>
+        </form>
+
+        <div class="contact-success" id="contact-success">
+          <div class="cs-icon">✓</div>
+          <h3>Message received, thank you.</h3>
+          <p>A member of our team will get back to you within one business day. For anything urgent, call us directly at <strong>0788 887 180</strong>.</p>
+          <button type="button" class="btn btn-ghost" id="send-another">Send Another Message</button>
+        </div>
+      </div>
+
+      <div class="contact-info-stack reveal">
+        <div class="info-card">
+          <h4>Head Office</h4>
+          <p>P.O. Box 40820 – 00100, Nairobi</p>
+          <p>1st Floor, RidgeView Place, Ridgeways</p>
+          <a href="tel:+254788887180">0788 887 180</a>
+          <a href="mailto:sasfinofarm@gmail.com">sasfinofarm@gmail.com</a>
+        </div>
+        <div class="info-card light">
+          <h4>Factory & Farms</h4>
+          <p>Factory: Kiamumbi, off Kamiti Road</p>
+          <p>Farm: Githunguri / Ikinu / 883</p>
+        </div>
+        <div class="info-card light">
+          <h4>Business Hours</h4>
+          <div class="hours-row"><span>Monday – Friday</span><span>8:00 – 17:00</span></div>
+          <div class="hours-row"><span>Saturday</span><span>8:00 – 13:00</span></div>
+          <div class="hours-row"><span>Sunday</span><span>Closed</span></div>
+        </div>
+        <div class="cert-badges" style="margin-top:4px;">
+          <span class="cert-badge" style="color:var(--timber-dark); border-color:var(--line);">✓ ISPM 15</span>
+          <span class="cert-badge" style="color:var(--timber-dark); border-color:var(--line);">✓ KEPHIS Accredited</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--slate-light);">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Find us</span>
+      <h2>Ridgeways, Nairobi</h2>
+      <p>Our head office sits in Ridgeways, with production based at our Kiamumbi factory off Kamiti Road.</p>
+    </div>
+    <div class="map-card reveal">
+      <iframe
+        src="https://www.google.com/maps?q=Ridgeways,+Nairobi,+Kenya&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Map showing Sasfino Farm Limited's Ridgeways office in Nairobi">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Common questions</span>
+      <h2>Before you reach out</h2>
+      <p>A few things clients usually ask before requesting a quote.</p>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <div class="faq-q"><span>How long does an order take, from quote to dispatch?</span><span class="faq-plus">+</span></div>
+        <div class="faq-a"><p>Lead time depends on quantity, dimensions, and whether the order is a standard or custom build. Standard-size pallets typically move faster than custom builds, which require dimension sign-off before production starts. Exact timelines are discussed once we understand your order.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>Do all products come with ISPM 15 heat treatment?</span><span class="faq-plus">+</span></div>
+        <div class="faq-a"><p>Our export-grade pallets are heat-treated to ISPM 15 as standard, reaching a core temperature of 56°C for 30 minutes. Angle board corners, pallet tops, and custom builds can be heat-treated on request depending on the shipment's destination requirements.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>Can you build to a non-standard size?</span><span class="faq-plus">+</span></div>
+        <div class="faq-a"><p>Yes. Where a client's cargo doesn't fit the Kenyan standard or EPAL-grade Euro footprint, our production team builds to the exact dimensions the shipment requires. Mention this in your message and we'll follow up with next steps.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>Which ports and freight types do you supply for?</span><span class="faq-plus">+</span></div>
+        <div class="faq-a"><p>Our pallets and angle board corners move through the Port of Mombasa and Jomo Kenyatta International Airport on behalf of horticultural exporters, tea and coffee estates, and freight forwarders across East Africa, for both sea and air freight.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="contact-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h5>Sasfino Farm Limited</h5>
+        <p style="max-width:32ch; color:rgba(245,244,239,0.72);">We connect local farms to global markets through agroforestry and high-quality wood products, growing the trees that carry your harvest to the world.</p>
+        <div class="cert-badges">
+          <span class="cert-badge">✓ ISPM 15</span>
+          <span class="cert-badge">✓ KEPHIS Accredited</span>
+        </div>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <p>P.O. Box 40820 – 00100, Nairobi</p>
+        <p>1st Floor, RidgeView Place, Ridgeways</p>
+        <a href="tel:+254788887180">0788 887 180</a>
+        <a href="mailto:sasfinofarm@gmail.com">sasfinofarm@gmail.com</a>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <a href="about.html">About</a>
+        <a href="index.html#sustainability">Sustainability</a>
+        <a href="products.html">Products</a>
+        <a href="index.html#leadership">Leadership</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h5>Factory & Office</h5>
+        <p>Farm: Githunguri / Ikinu / 883</p>
+        <p>Factory: Kiamumbi, off Kamiti Road</p>
+        <p>Office: Ridgeways, Nairobi</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Sasfino Farm Limited. Incorporated in Kenya, 2013.</span>
+      <span class="mono">CPR/2013/95937</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="contact.js"></script>
+
+</body>
+</html>
